@@ -1,6 +1,5 @@
 package com.daniel.calendar.calendarapp.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.daniel.calendar.calendarapp.model.MonthDTO;
@@ -23,9 +22,8 @@ public class MonthController {
 
     @GetMapping
     public List<MonthDTO> getAllMonths() {
-        //TODO this is just mock data
         log.debug("called getAllMonth in MonthController");
-        return new ArrayList<MonthDTO>();
+        return monthService.getAllMonths();
     }
 
 }

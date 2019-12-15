@@ -1,5 +1,7 @@
 package com.daniel.calendar.calendarapp.service;
 
+import java.util.List;
+
 import com.daniel.calendar.calendarapp.model.MonthDTO;
 
 public interface MonthService {
@@ -8,5 +10,7 @@ public interface MonthService {
      * This is just an example method, could be other
      */
     MonthDTO getMonthById(Long monthId);
+
+    List<MonthDTO> getAllMonths();
 
 }
