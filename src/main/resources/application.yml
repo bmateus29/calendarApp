@@ -1,3 +1,5 @@
 spring.application.name: Calendar App
 server.port: 8761
 
+server.servlet.contextPath: /api
+
